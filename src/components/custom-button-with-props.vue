@@ -11,6 +11,7 @@
       </span>
       <span
         v-if="buttonText.length"
+        :style="`color:${buttonTextColor}`"
         class="custom-button-with-props__text"
       >
         {{ buttonText }}
@@ -32,6 +33,10 @@ export default {
     buttonText: {
       type: String,
       default: '',
+    },
+    buttonTextColor: {
+      type: String,
+      default: '#fff',
     },
     showIconBefore: {
       type: Boolean,

@@ -2,6 +2,7 @@
   <div id="app">
     <CustomButtonWithProps
       :button-text="'I\'m a button'"
+      :button-text-color="'red'"
       :show-icon-before="true"
       :show-icon-after="true"
     />
