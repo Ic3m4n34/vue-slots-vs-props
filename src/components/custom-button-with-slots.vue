@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-button-with-slots">
+  <div class='custom-button-with-slots'>
     slots
   </div>
 </template>
@@ -10,6 +10,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

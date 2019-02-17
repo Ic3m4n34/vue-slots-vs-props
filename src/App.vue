@@ -1,26 +1,28 @@
 <template>
-  <div id="app">
-    <CustomButtonWithProps />
+  <div id='app'>
+    <CustomButtonWithProps
+      :button-text="'I\'m a button'"
+    />
     <CustomButtonWithSlots />
   </div>
 </template>
 
 <script>
-import CustomButtonWithProps from "./components/Custom-button-with-props";
-import CustomButtonWithSlots from "./components/Custom-button-with-slots";
+import CustomButtonWithProps from './components/custom-button-with-props';
+import CustomButtonWithSlots from './components/custom-button-with-slots';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     CustomButtonWithProps,
     CustomButtonWithSlots,
-  }
+  },
 };
 </script>
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
