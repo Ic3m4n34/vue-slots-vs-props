@@ -1,9 +1,21 @@
 <template>
-  <div id='app'>
+  <div id="app">
     <CustomButtonWithProps
       :button-text="'I\'m a button'"
+      :show-icon-before="true"
+      :show-icon-after="true"
     />
-    <CustomButtonWithSlots />
+    <CustomButtonWithSlots>
+      <template v-slot:icon-before>
+        <i class="fas fa-user"></i>
+      </template>
+      <template v-slot:button-text>
+        Completely different text
+      </template>
+      <template v-slot:icon-after>
+        <i class="fas fa-cog"></i>
+      </template>
+    </CustomButtonWithSlots>
   </div>
 </template>
 
@@ -21,6 +33,8 @@ export default {
 </script>
 
 <style>
+@import 'https://use.fontawesome.com/releases/v5.7.2/css/all.css';
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,5 +42,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#app > div {
+  margin-bottom: 36px;
 }
 </style>

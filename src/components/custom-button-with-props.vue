@@ -7,9 +7,12 @@
         v-if="showIconBefore"
         class="custom-button-with-props__icon--before"
       >
-        <i class="fas fa-arrow-right"></i>
+        <i class="fa fa-arrow-right"></i>
       </span>
-      <span v-if="buttonText.length">
+      <span
+        v-if="buttonText.length"
+        class="custom-button-with-props__text"
+      >
         {{ buttonText }}
       </span>
       <span
@@ -19,7 +22,6 @@
         <i class="fas fa-arrow-right"></i>
       </span>
     </button>
-    <!-- multiple, Icon, -->
   </div>
 </template>
 
@@ -44,5 +46,7 @@ export default {
 </script>
 
 <style>
-
+.custom-button-with-props__text {
+  padding: 0 12px;
+}
 </style>
