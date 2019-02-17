@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <HelloWorld />
+    <CustomButtonWithProps />
+    <CustomButtonWithSlots />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import CustomButtonWithProps from "./components/Custom-button-with-props";
+import CustomButtonWithSlots from "./components/Custom-button-with-slots";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    CustomButtonWithProps,
+    CustomButtonWithSlots,
   }
 };
 </script>
